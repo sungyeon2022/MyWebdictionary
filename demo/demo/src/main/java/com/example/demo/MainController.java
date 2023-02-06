@@ -11,11 +11,6 @@ public class MainController{
     }
 
     @RequestMapping("/")
-    public String accessDenied(){
-        return "AccessDenied";
-    }
-
-    @RequestMapping("/")
     public String root(){
         return "redirect:/login";
     }

@@ -1,0 +1,38 @@
+.outside{
+    background-color: #efefef;
+}
+.container{
+    border: 1px solid var(--color-primary);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.box{
+    background-color: #ddd;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    min-height: 400px;
+}
+
+.box-cont,
+.box-side{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.box-side{
+    width: 140px;
+    flex-shrink: 0;
+}
+
+.box-cont{
+    flex-grow: 1;
+    min-width: 0px;
+    overflow: scroll;
+}
+
+.inside{
+    width: 1200px;
+    background-color: beige;
+    border: 10px blue solid;
+}

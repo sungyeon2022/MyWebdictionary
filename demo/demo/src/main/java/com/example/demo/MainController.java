@@ -10,8 +10,13 @@ public class MainController{
         return "webdic에 오신것을 환영합니다.";
     }
 
+    @RequestMapping("/home")
+    public String home(){
+        return "home";
+    }
+
     @RequestMapping("/")
     public String root(){
-        return "redirect:/login";
+        return "redirect:/home";
     }
 }
